@@ -25,6 +25,7 @@
       firefoxTheme  = (import ./templates/firefoxTheme.nix)  themeFull;
       ghosttyConfig = (import ./templates/ghosttyConfig.nix) themeFull;
       tmTheme       = (import ./templates/tmTheme.nix)       themeFull;
+      dmenuTheme    = (import ./templates/dmenuTheme.nix)    themeFull;
     };
   } // builtins.mapAttrs (name: self.custom) raw;
 }
