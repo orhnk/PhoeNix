@@ -75,7 +75,7 @@
   "default-dark" = import ./themes/default-dark.nix;
   "default-light" = import ./themes/default-light.nix;
   "dirtysea" = import ./themes/dirtysea.nix;
-  "doom" = import ./themes/doom.nix
+  "doom" = import ./themes/doom.nix;
   "dracula" = import ./themes/dracula.nix;
   "edge-dark" = import ./themes/edge-dark.nix;
   "edge-light" = import ./themes/edge-light.nix;
@@ -91,7 +91,7 @@
   "eva-dim" = import ./themes/eva-dim.nix;
   "eva" = import ./themes/eva.nix;
   "evenok-dark" = import ./themes/evenok-dark.nix;
-  "everblush" = import ./themes/everblush.nix
+  "everblush" = import ./themes/everblush.nix;
   "everforest-dark-hard" = import ./themes/everforest-dark-hard.nix;
   "everforest" = import ./themes/everforest.nix;
   "flat" = import ./themes/flat.nix;
