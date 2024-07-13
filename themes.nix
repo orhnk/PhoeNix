@@ -153,6 +153,7 @@
   "mexico-light" = import ./themes/mexico-light.nix;
   "mocha" = import ./themes/mocha.nix;
   "monokai" = import ./themes/monokai.nix;
+  "monochrome" = import ./themes/monochrome.nix;
   "mountain" = import ./themes/mountain.nix;
   "nebula" = import ./themes/nebula.nix;
   "nord" = import ./themes/nord.nix;
@@ -212,6 +213,7 @@
   "summercamp" = import ./themes/summercamp.nix;
   "summerfruit-dark" = import ./themes/summerfruit-dark.nix;
   "summerfruit-light" = import ./themes/summerfruit-light.nix;
+  "swamp" = import ./themes/swamp.nix;
   "synth-midnight-dark" = import ./themes/synth-midnight-dark.nix;
   "synth-midnight-light" = import ./themes/synth-midnight-light.nix;
   "tango" = import ./themes/tango.nix;
