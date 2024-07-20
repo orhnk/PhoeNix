@@ -119,6 +119,7 @@
   "gruvbox-material-light-hard" = import ./themes/gruvbox-material-light-hard.nix;
   "gruvbox-material-light-medium" = import ./themes/gruvbox-material-light-medium.nix;
   "gruvbox-material-light-soft" = import ./themes/gruvbox-material-light-soft.nix;
+  "gruvchad" = import ./themes/gruvchad.nix;
   "hardcore" = import ./themes/hardcore.nix;
   "harmonic16-dark" = import ./themes/harmonic16-dark.nix;
   "harmonic16-light" = import ./themes/harmonic16-light.nix;
