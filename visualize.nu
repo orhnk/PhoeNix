@@ -1,5 +1,8 @@
 #!/usr/bin/env nu
 
+# USAGE:
+# `ls themes/gruv* | each { ./visualize.nu $in.name}`
+
 # Visualizes a theme in the terminal.
 def main [
   theme: string # The path to the theme to visualize.
