@@ -1,22 +1,34 @@
 {
   description = "Theme your NixOS configuration consistently.";
 
-  outputs = {self}: let
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs";
+  };
+
+  outputs = {
+    self,
+    nixpkgs,
+  }: let
     raw = import ./themes.nix;
 
     isValidColor = thing:
       if builtins.isString thing
-      then (builtins.match "^[0-9a-fA-F]{6}" thing) != null
+      then (builtins.match "^[0-9a-fA-F]{6}$" thing) != null
       else false;
 
     hexToRgb = hex: {
-      r = builtins.fromJSON ("0x" + builtins.substring 0 2 hex);
-      g = builtins.fromJSON ("0x" + builtins.substring 2 2 hex);
-      b = builtins.fromJSON ("0x" + builtins.substring 4 2 hex);
+      r = builtins.parseInt (builtins.substring 0 2 hex) 16;
+      g = builtins.parseInt (builtins.substring 2 2 hex) 16;
+      b = builtins.parseInt (builtins.substring 4 2 hex) 16;
     };
 
     rgbToHex = rgb: let
-      toHex = x: builtins.substring 2 2 (builtins.toString (0 x100 + x));
+      toHex = x: let
+        hexStr = builtins.toString (builtins.bitAnd x nixpkgs.lib.fromHex "0xff");
+      in
+        if builtins.stringLength hexStr == 1
+        then "0" + hexStr
+        else hexStr;
     in
       toHex rgb.r + toHex rgb.g + toHex rgb.b;
 
@@ -33,6 +45,10 @@
   in
     {
       inherit raw;
+
+      functions = {
+        inherit blend;
+      };
 
       custom = theme: let
         with0x =
@@ -65,7 +81,6 @@
           ghosttyConfig = (import ./templates/ghosttyConfig.nix) themeFull;
           tmTheme = (import ./templates/tmTheme.nix) themeFull;
           dmenuTheme = (import ./templates/dmenuTheme.nix) themeFull;
-          blend = blend;
         };
     }
     // builtins.mapAttrs (name: self.custom) raw;
