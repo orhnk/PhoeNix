@@ -224,6 +224,7 @@
   "tokyo-city-light" = import ./themes/tokyo-city-light.nix;
   "tokyo-city-terminal-dark" = import ./themes/tokyo-city-terminal-dark.nix;
   "tokyo-city-terminal-light" = import ./themes/tokyo-city-terminal-light.nix;
+  "tokyo-night-siduck" = import ./themes/tokyo-night-siduck.nix;
   "tokyo-night-dark" = import ./themes/tokyo-night-dark.nix;
   "tokyo-night-light" = import ./themes/tokyo-night-light.nix;
   "tokyo-night-storm" = import ./themes/tokyo-night-storm.nix;
