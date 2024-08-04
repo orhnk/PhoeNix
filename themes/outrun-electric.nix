@@ -5,10 +5,10 @@
   base01 = "090819";
   base02 = "110D26";
   base03 = "3B4167";
-  base04 = "2D2844";
-  base05 = "BA45A3";
-  base06 = "6A6EA3";
-  base07 = "6564D1";
+  base04 = "6A6EA3";
+  base05 = "6564D1";
+  base06 = "BA45A3";
+  base07 = "F2F3F7";
   base08 = "919AD9";
   base09 = "CF433E";
   base0A = "FFD400";
