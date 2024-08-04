@@ -1,8 +1,8 @@
 {
   name = "Outrun Electric";
   author = "ema2159 <https://github.com/ema2159>";
-  base00 = "131033";
-  base01 = "1F1147";
+  base00 = "0C0A20";
+  base01 = "090819";
   base02 = "110D26";
   base03 = "3B4167";
   base04 = "2D2844";
