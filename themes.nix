@@ -164,6 +164,7 @@
   "one-light" = import ./themes/one-light.nix;
   "onedark" = import ./themes/onedark.nix;
   "outrun-dark" = import ./themes/outrun-dark.nix;
+  "outrun-electric" = import ./themes/outrun-electric.nix;
   "oxocarbon-dark" = import ./themes/oxocarbon-dark.nix;
   "oxocarbon-light" = import ./themes/oxocarbon-light.nix;
   "pandora" = import ./themes/pandora.nix;
