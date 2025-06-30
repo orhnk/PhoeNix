@@ -50,7 +50,7 @@ def main [] {
   mkdir themes
 
   ls base16-schemes
-  | filter {
+  | where {
     let extension = ($in.name | path parse | get extension)
 
     $extension == "yml" or $extension == "yaml"
